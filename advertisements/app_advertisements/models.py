@@ -6,5 +6,5 @@ class Advertisement(models.Model):
     description = models.TextField("описание")
     price = models.DecimalField("цена", max_digits=10, decimal_places=2)
     auction = models.BooleanField("торг", help_text="Отметьте, если торг уместен")
-    created_at = models.DateTimeField(auto_now=True)
-    updated_at = models.DateTimeField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
